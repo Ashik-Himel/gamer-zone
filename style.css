@@ -159,7 +159,7 @@ ul {
   margin-bottom: 0.5rem;
 }
 .hero-section ul li {
-  margin-bottom: 0.7rem;
+  line-height: 2.2;
 }
 .hero-section ul li i {
   color: var(--primary-color);
@@ -187,4 +187,64 @@ ul {
 .about-section span:nth-child(5) {
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+/* Online Games Section */
+.online-games-section {
+  padding: 2rem;
+  text-align: center;
+}
+.online-games-section h2 {
+  margin-bottom: 0.5rem;
+}
+.online-games-section .card-container {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.online-games-section .card-container figure {
+  max-width: 220px;
+}
+.online-games-section figure .img-wrapper {
+  position: relative;
+}
+.online-games-section figure .card-hover {
+  position: absolute;
+  inset: 0;
+  top: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: top 0.3s ease;
+}
+.online-games-section figure:hover .card-hover {
+  top: 0;
+}
+.online-games-section figure .card-hover i {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.online-games-section figure .card-hover i:hover {
+  transform: scale(1.5);
+  color: var(--primary-color);
+}
+.online-games-section figure .card-hover span {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.online-games-section figure figcaption {
+  text-align: left;
+  margin-top: 0.8rem;
 }
