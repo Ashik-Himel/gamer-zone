@@ -24,10 +24,17 @@ body {
 }
 h1, h2, h3 {
   color: var(--title-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 h1 {
   font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  max-width: 400px;
+  margin-bottom: 1.5rem;
 }
 a {
   color: inherit;
@@ -45,7 +52,7 @@ ul {
 
 /* Reusable Classes */
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   padding-inline: 1.5rem;
   margin-inline: auto;
 }
@@ -157,4 +164,27 @@ ul {
 .hero-section ul li i {
   color: var(--primary-color);
   margin-right: 7px;
+}
+
+/* About Section */
+.about-section {
+  padding-block: 3rem;
+}
+.about-section .about-img img {
+  max-width: 100%;
+}
+.about-section .about-info {
+  text-align: right;
+}
+.about-section .about-info > * {
+  margin-left: auto;
+}
+.about-section span:nth-child(4) {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 5px;
+}
+.about-section span:nth-child(5) {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
