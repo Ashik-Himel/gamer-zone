@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+:root {
+  --primary-color: #FF42A5;
+  --secondary-color: #4EC5F7;
+  --title-color: #0B0223;
+  --navlink-color: #3C354F;
+  --text-color: #534C64;
+  -footer-text: rgba(255, 255, 255, 0.60);
+  --gradient-color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: var(--text-color);
+}
+h1, h2, h3 {
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+}
+h1 {
+  font-size: 3rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+img {
+  width: 100%;
+  display: block;
+  margin-inline: auto;
+}
+ul {
+  list-style-type: none;
+}
+
+/* Reusable Classes */
+.container {
+  max-width: 1440px;
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+.flex > * {
+  flex: 1;
+}
+.flex > * > img {
+  max-width: 500px;
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+.btn-alt {
+  background-color: var(--secondary-color);
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-gradient {
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Header Section */
+.header-section nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+}
+.header-section nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.header-section nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--title-color);
+}
+.header-section nav .logo img {
+  max-width: 50px;
+}
+.header-section nav ul a:hover {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+.header-section nav ul .nav-btn {
+  background-color: rgba(11, 2, 35, 0.10);
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.header-section nav ul .nav-btn .fa-youtube {
+  color: #F61C0D;
+  font-size: 1.4rem;
+}
+.header-section nav ul .nav-btn .fa-tiktok {
+  color: #000;
+  text-shadow: 1px 1px #F00044;
+  font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  align-items: flex-start;
+}
+.hero-section .hero-info {
+  background: url(./images/bg-img.png) center / 100% 100% no-repeat;
+  padding: 8rem 2rem;
+}
+.hero-section .hero-info > span {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--title-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.hero-section ul li {
+  margin-bottom: 0.7rem;
+}
+.hero-section ul li i {
+  color: var(--primary-color);
+  margin-right: 7px;
+}
