@@ -30,7 +30,7 @@ h1 {
   font-size: 3rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 p {
   margin-bottom: 1.5rem;
@@ -148,7 +148,7 @@ ul {
 }
 .hero-section .hero-info {
   background: url(./images/bg-img.png) center / 100% 100% no-repeat;
-  padding: 8rem 2rem;
+  padding: 6rem 2rem;
 }
 .hero-section .hero-info > span {
   font-size: 1.5rem;
@@ -250,24 +250,39 @@ ul {
   margin-top: 0.8rem;
 }
 
-/* Play Games Section */
-.play-games-section {
+/* Play Instantly + Play Games Section */
+.play-instantly-section, .play-games-section {
   padding-block: 4rem;
 }
-.play-games-section .play-games-img {
+.play-instantly-img, .play-games-img {
   position: relative;
 }
-.play-games-section .play-games-img img:first-child {
+.play-instantly-img img:first-child, .play-games-img img:first-child {
   width: 80%;
+  margin-right: 0;
+}
+.play-instantly-img img:last-child, .play-games-img img:last-child {
+  width: 30%;
+  position: absolute;
+  bottom: -80px;
+  left: 20%;
+}
+.play-instantly-info, .play-games-info {
+  max-width: 340px;
+  text-align: right;
+}
+
+/* Play Games Section */
+.play-games-section {
+  padding-top: 6rem;
+}
+.play-games-section .play-games-img img:first-child {
   margin-left: 0;
 }
 .play-games-section .play-games-img img:last-child {
-  width: 40%;
-  position: absolute;
-  bottom: -50px;
-  right: 0;
+  right: 20%;
+  left: auto;
 }
 .play-games-section .play-games-info {
-  max-width: 450px;
-  margin-left: auto;
+  text-align: left;
 }
