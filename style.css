@@ -265,7 +265,7 @@ ul {
   width: 30%;
   position: absolute;
   bottom: -80px;
-  left: 20%;
+  right: 50%;
 }
 .play-instantly-info, .play-games-info {
   max-width: 340px;
@@ -280,8 +280,8 @@ ul {
   margin-left: 0;
 }
 .play-games-section .play-games-img img:last-child {
-  right: 20%;
-  left: auto;
+  left: 50%;
+  right: initial;
 }
 .play-games-section .play-games-info {
   text-align: left;
