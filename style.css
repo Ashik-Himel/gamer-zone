@@ -33,7 +33,6 @@ h2 {
   font-size: 2rem;
 }
 p {
-  max-width: 400px;
   margin-bottom: 1.5rem;
 }
 a {
@@ -174,6 +173,7 @@ ul {
   max-width: 100%;
 }
 .about-section .about-info {
+  max-width: 450px;
   text-align: right;
 }
 .about-section .about-info > * {
@@ -224,10 +224,11 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  transition: top 0.3s ease;
+  transition: top 0.3s ease, border 0.3s ease;
 }
 .online-games-section figure:hover .card-hover {
   top: 0;
+  border: 3px solid var(--primary-color);
 }
 .online-games-section figure .card-hover i {
   font-size: 2rem;
@@ -247,4 +248,26 @@ ul {
 .online-games-section figure figcaption {
   text-align: left;
   margin-top: 0.8rem;
+}
+
+/* Play Games Section */
+.play-games-section {
+  padding-block: 4rem;
+}
+.play-games-section .play-games-img {
+  position: relative;
+}
+.play-games-section .play-games-img img:first-child {
+  width: 80%;
+  margin-left: 0;
+}
+.play-games-section .play-games-img img:last-child {
+  width: 40%;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+.play-games-section .play-games-info {
+  max-width: 450px;
+  margin-left: auto;
 }
