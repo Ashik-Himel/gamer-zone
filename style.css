@@ -476,7 +476,7 @@ ul {
     left: 65%;
   }
   .careers-section .careers-img img {
-    min-width: 550px;
+    right: -120px;
   }
 
   /* Careers Section */
