@@ -111,7 +111,7 @@ ul {
   align-items: center;
   gap: 1.5rem;
 }
-.header-section nav .logo {
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +120,7 @@ ul {
   font-weight: 700;
   color: var(--title-color);
 }
-.header-section nav .logo img {
+.logo img {
   max-width: 50px;
 }
 .header-section nav ul a:hover {
@@ -269,7 +269,7 @@ ul {
   width: 30%;
   position: absolute;
   bottom: -80px;
-  right: 50%;
+  right: 40%;
 }
 .play-instantly-info, .play-games-info {
   max-width: 350px;
@@ -284,7 +284,7 @@ ul {
   margin-left: 0;
 }
 .play-games-section .play-games-img img:last-child {
-  left: 50%;
+  left: 40%;
   right: initial;
 }
 .play-games-section .play-games-info {
@@ -297,6 +297,7 @@ ul {
   color: white;
   margin-top: 5rem;
   position: relative;
+  overflow-x: hidden;
 }
 .careers-section .careers-img img {
   position: absolute;
@@ -313,7 +314,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   font-weight: 600;
 }
 .careers-section .list-container ul li {
@@ -378,21 +379,14 @@ ul {
   gap: 2rem;
 }
 .footer-section .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.footer-section .logo img {
-  max-width: 50px;
+  color: white;
 }
 .footer-section ul:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 .footer-section ul:nth-child(2) li a:hover {
   color: var(--primary-color);
@@ -411,30 +405,14 @@ ul {
 }
 .footer-section .social-links i:hover {
   transform: scale(1.5);
-}
-.footer-section .social-links i:nth-child(1):hover {
-  color: #1da1f2;
-}
-.footer-section .social-links i:nth-child(2):hover {
-  color: #4267B2;
-}
-.footer-section .social-links i:nth-child(3):hover {
-  color: #c4302b;
-}
-.footer-section .social-links i:nth-child(4):hover {
-  color: #0072b1;
-}
-.footer-section .social-links i:nth-child(5):hover {
-  color: #fbad50;
-}
-.footer-section .social-links i:nth-child(6):hover {
-  color: #1da1f2;
+  color: var(--primary-color);
 }
 .footer-section ul:nth-child(4) {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
   color: var(--footer-text);
 }
 .footer-section p {
@@ -466,5 +444,141 @@ ul {
 @media screen and (min-width: 1400px) {
   .container {
     width: 1320px;
+  }
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1400px) {
+  .play-instantly-img img:last-child {
+    right: 55%;
+  }
+  .play-games-section .play-games-img img:last-child {
+    left: 55%;
+  }
+  .careers-section .careers-img img {
+    min-width: 600px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .play-instantly-img img:last-child {
+    right: 65%;
+  }
+  .play-games-section .play-games-img img:last-child {
+    left: 65%;
+  }
+  .careers-section .careers-img img {
+    min-width: 550px;
+  }
+
+  /* Careers Section */
+  .careers-section .careers-info {
+    min-width: 500px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .flex {
+    gap: 2rem;
+  }
+  /* Hero Section */
+  .hero-section {
+    align-items: center;
+  }
+  .hero-section .hero-info {
+    padding: 2rem;
+  }
+
+  /* Online Games Section */
+  .online-games-section .card-container {
+    justify-content: center;
+    gap: 3rem 2rem;
+  }
+
+  /* Play Games Section */
+  .play-instantly-img img:last-child, .play-games-img img:last-child {
+    bottom: -40px;
+  }
+  .play-instantly-img img:last-child {
+    right: 60%;
+  }
+  .play-games-section .play-games-img img:last-child {
+    left: 60%;
+  }
+  .careers-section .careers-img img {
+    right: -300px;
+    min-width: 550px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .flex {
+    flex-direction: column;
+  }
+
+  /* Header Section */
+  .header-section nav {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .header-section nav ul {
+    gap: 1rem;
+  }
+
+  /* Hero Section */
+  .hero-section.flex {
+    flex-direction: column-reverse;
+  }
+  .hero-section .hero-info {
+    width: 100%;
+  }
+
+  /* About Section */
+  .about-section .about-info, .play-instantly-info, .play-games-section .play-games-info {
+    text-align: center;
+  }
+
+  /* Play Games Section */
+  .play-games-section .flex {
+    flex-direction: column-reverse;
+  }
+  .play-instantly-img img:last-child {
+    right: 65%;
+  }
+  .play-games-section .play-games-img img:last-child {
+    left: 65%;
+  }
+
+  /* Careers Section */
+  .careers-section {
+    padding-block: 4rem;
+  }
+  .careers-section .flex {
+    flex-direction: column;
+  }
+  .careers-section .careers-info {
+    padding: 0;
+    width: 100%;
+    min-width: 100%;
+  }
+  .careers-section .careers-img img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header-section nav ul {
+    flex-direction: column;
+  }
+  .online-games-section .card-container {
+    gap: 1.5rem;
+  }
+  .careers-section .careers-img img {
+    min-width: 100%;
+  }
+  .footer-section p {
+    text-align: center;
   }
 }
