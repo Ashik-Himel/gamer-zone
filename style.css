@@ -22,7 +22,7 @@ body {
   font-weight: 400;
   color: var(--text-color);
 }
-h1, h2, h3 {
+h1, h2 {
   color: var(--title-color);
   margin-bottom: 1rem;
 }
@@ -31,6 +31,10 @@ h1 {
 }
 h2 {
   font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 p {
   margin-bottom: 1.5rem;
@@ -138,7 +142,7 @@ ul {
 }
 .header-section nav ul .nav-btn .fa-tiktok {
   color: #000;
-  text-shadow: 1px 1px #F00044;
+  text-shadow: 1px 1px #F00044, -1px -1px #08FFF9;
   font-size: 1.1rem;
 }
 
@@ -285,6 +289,43 @@ ul {
 }
 .play-games-section .play-games-info {
   text-align: left;
+}
+
+/* Careers Section */
+.careers-section {
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 5rem;
+  position: relative;
+}
+.careers-section .careers-img img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 750px;
+  height: 100%;
+}
+.careers-section .careers-info {
+  padding-block: 4rem;
+}
+.careers-section .careers-info .list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 600;
+}
+.careers-section .list-container ul li {
+  margin-bottom: 1rem;
+}
+.careers-section .list-container ul:nth-child(2) {
+  text-align: right;
+}
+.careers-section .careers-info .btn {
+  background-color: white;
+  color: var(--primary-color);
+  margin-top: 2rem;
 }
 
 /* Category Section */
