@@ -5,7 +5,7 @@
   --title-color: #0B0223;
   --navlink-color: #3C354F;
   --text-color: #534C64;
-  -footer-text: rgba(255, 255, 255, 0.60);
+  --footer-text: rgba(255, 255, 255, 0.60);
   --gradient-color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
 }
 * {
@@ -311,4 +311,82 @@ ul {
 .category-section .card span {
   color: var(--title-color);
   font-weight: 600;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: var(--title-color);
+  color: white;
+  padding-block: 4rem 2rem;
+}
+.footer-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-section .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.footer-section .logo img {
+  max-width: 50px;
+}
+.footer-section ul:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-section ul:nth-child(2) li a:hover {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+.footer-section .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.8rem;
+}
+.footer-section .social-links i {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.footer-section .social-links i:hover {
+  transform: scale(1.5);
+}
+.footer-section .social-links i:nth-child(1):hover {
+  color: #1da1f2;
+}
+.footer-section .social-links i:nth-child(2):hover {
+  color: #4267B2;
+}
+.footer-section .social-links i:nth-child(3):hover {
+  color: #c4302b;
+}
+.footer-section .social-links i:nth-child(4):hover {
+  color: #0072b1;
+}
+.footer-section .social-links i:nth-child(5):hover {
+  color: #fbad50;
+}
+.footer-section .social-links i:nth-child(6):hover {
+  color: #1da1f2;
+}
+.footer-section ul:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--footer-text);
+}
+.footer-section p {
+  color: var(--footer-text);
+  margin-bottom: 0;
 }
