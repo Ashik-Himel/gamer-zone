@@ -173,7 +173,7 @@ ul {
   max-width: 100%;
 }
 .about-section .about-info {
-  max-width: 450px;
+  max-width: 400px;
   text-align: right;
 }
 .about-section .about-info > * {
@@ -268,7 +268,7 @@ ul {
   right: 50%;
 }
 .play-instantly-info, .play-games-info {
-  max-width: 340px;
+  max-width: 350px;
   text-align: right;
 }
 
@@ -285,4 +285,30 @@ ul {
 }
 .play-games-section .play-games-info {
   text-align: left;
+}
+
+/* Category Section */
+.category-section {
+  padding-block: 4rem;
+}
+.category-section .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.category-section .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.category-section .card img {
+  max-width: 40px;
+  border-radius: 50%;
+}
+.category-section .card span {
+  color: var(--title-color);
+  font-weight: 600;
 }
