@@ -7,6 +7,7 @@
   --text-color: #534C64;
   --footer-text: rgba(255, 255, 255, 0.60);
   --gradient-color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  --section-bg-color: rgba(255, 66, 165, 0.03);
 }
 * {
   margin: 0;
@@ -84,6 +85,7 @@ ul {
   padding: 12px 25px;
   border-radius: 30px;
   text-transform: uppercase;
+  text-align: center;
 }
 .btn-alt {
   background-color: var(--secondary-color);
@@ -100,10 +102,13 @@ ul {
 
 /* Header Section */
 .header-section nav {
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  padding-block: 1.5rem;
+}
+.header-section nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 1.5rem;
 }
 .header-section nav ul {
   display: flex;
@@ -147,7 +152,7 @@ ul {
 }
 
 /* Hero Section */
-.hero-section {
+.hero-section .flex {
   align-items: flex-start;
 }
 .hero-section .hero-info {
@@ -172,6 +177,7 @@ ul {
 /* About Section */
 .about-section {
   padding-block: 3rem;
+  background-color: var(--section-bg-color);
 }
 .about-section .about-img img {
   max-width: 100%;
@@ -332,6 +338,7 @@ ul {
 /* Category Section */
 .category-section {
   padding-block: 4rem;
+  background-color: var(--section-bg-color);
 }
 .category-section .card-container {
   display: flex;
@@ -341,15 +348,16 @@ ul {
   flex-wrap: wrap;
 }
 .category-section .card {
+  background-color: white;
+  color: var(--title-color);
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  color: var(--title-color);
-  border: 2px solid transparent;
-  border-radius: 30px;
-  padding: 5px 10px;
-  cursor: pointer;
   transition: border 0.3s ease, color 0.3s ease;
 }
 .category-section .card:hover {
@@ -369,7 +377,7 @@ ul {
 .footer-section {
   background-color: var(--title-color);
   color: white;
-  padding-block: 4rem 2rem;
+  padding-block: 4rem 3rem;
 }
 .footer-section .container {
   display: flex;
@@ -385,7 +393,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem 2rem;
   flex-wrap: wrap;
 }
 .footer-section ul:nth-child(2) li a:hover {
@@ -411,7 +419,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   color: var(--footer-text);
 }
@@ -480,7 +488,7 @@ ul {
     gap: 2rem;
   }
   /* Hero Section */
-  .hero-section {
+  .hero-section .flex {
     align-items: center;
   }
   .hero-section .hero-info {
@@ -517,7 +525,7 @@ ul {
   }
 
   /* Header Section */
-  .header-section nav {
+  .header-section nav .container {
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 1rem;
@@ -527,7 +535,10 @@ ul {
   }
 
   /* Hero Section */
-  .hero-section.flex {
+  .hero-section {
+    margin-top: 2rem;
+  }
+  .hero-section .flex {
     flex-direction: column-reverse;
   }
   .hero-section .hero-info {
@@ -567,6 +578,22 @@ ul {
     width: 100%;
     height: auto;
   }
+
+  /* Category Section */
+  .category-section .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .category-section .card {
+    gap: 5px;
+  }
+  .category-section .card img {
+    width: 25px;
+    height: 25px;
+  }
+  .category-section .card span {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 576px) {
   .header-section nav ul {
@@ -575,8 +602,20 @@ ul {
   .online-games-section .card-container {
     gap: 1.5rem;
   }
+  .online-games-section .card-container figure {
+    width: 100%;
+    max-width: 300px;
+  }
   .careers-section .careers-img img {
     min-width: 100%;
+  }
+  .footer-section .social-links {
+    width: 80%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1.5rem;
   }
   .footer-section p {
     text-align: center;
