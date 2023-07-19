@@ -29,12 +29,15 @@ h1, h2 {
 }
 h1 {
   font-size: 3rem;
+  font-weight: 800;
 }
 h2 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 h3 {
   font-size: 1.8rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 p {
@@ -169,6 +172,7 @@ ul {
 }
 .hero-section ul li {
   line-height: 2.2;
+  font-weight: 500;
 }
 .hero-section ul li i {
   color: var(--primary-color);
@@ -253,7 +257,7 @@ ul {
 .online-games-section figure .card-hover span {
   color: var(--primary-color);
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
 }
 .online-games-section figure figcaption {
@@ -318,16 +322,15 @@ ul {
   padding-block: 4rem;
 }
 .careers-section .careers-info .list-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
   font-weight: 600;
 }
-.careers-section .list-container ul li {
+.careers-section .list-container div {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
   margin-bottom: 1rem;
 }
-.careers-section .list-container ul:nth-child(2) {
+.careers-section .list-container div span:last-child {
   text-align: right;
 }
 .careers-section .careers-info .btn {
@@ -423,6 +426,7 @@ ul {
   gap: 1.5rem;
   flex-wrap: wrap;
   color: var(--footer-text);
+  font-weight: 500;
 }
 .footer-section p {
   color: var(--footer-text);
